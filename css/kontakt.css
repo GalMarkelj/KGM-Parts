@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'PT Serif', serif;
+
+}
+/* --------------------------------------------------------------------------------------------------------------*/
+
+.kontakt-stran{
+    background-color: #000016;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.glavni-naslov h1{
+    background-color: rgba(0,0,0, .5);
+    text-align: center;
+    font-size: 5em;
+    color: white;
+}
+
+.orodna-vrstica{
+    position: static;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0, .5);
+    border-bottom: 4px solid rgb(0, 204, 255);
+    box-shadow: 0px 20px 40px -20px rgb(0, 204, 255);
+}
+
+.orodna-vrstica h2{
+    display: none;
+}
+
+nav #icon{
+    display: none;
+}
+
+.logo-bar{
+    display: none;
+}
+
+nav{
+    margin-top: 0px;
+}
+
+nav ul{
+    width: 100%;
+    padding-top: 1em;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    position: block;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+nav ul li a:hover{
+    color: black;
+    background-color: white;
+    position: block;
+}
+
+nav ul li.active a{
+    background-color: white;
+    color: black;
+}
+
+nav ul li ul{
+    border: solid rgba(255, 255, 255, .2);
+    border-top: solid rgb(0, 204, 255);
+    left: 50%;
+    width: 10%;
+    height: 160px;
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0, .8);
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul{
+    display: block;
+    transition-delay: 5s;
+}
+
+nav ul li ul li{
+    width: 99%;
+    border-radius: 4px;
+}
+
+nav ul li ul li a{
+    padding: 8px 14px;
+    color: white;
+}
+
+nav ul li ul li a:hover{
+    background-color: rgba(0,0,0,0);
+    border: solid white;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.gps{
+    width: 40%;
+    height: 31%;
+    margin: 10% 0% 0% 15%;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.gps iframe{
+    width: 100%;
+}
+
+#zemljevid{
+    border-radius: 10px;
+}
+
+.umetnina{
+    background-color: rgba(0,0,0, .5);
+    border: 3px solid white;
+    width: 40%;
+    height: 45%;
+    margin: -13.5% 0% 0% 13%;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.podatki{
+    width: 50%;
+    height: 50%;
+    margin: -24.5% 0% 0% 58%;
+}
+
+.podatki li{
+    padding-left: 20px;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.podatki ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: 0.6s ease;
+    font-size: 2em;
+}
+
+.podatki ul li ul li a{
+    color: white;
+    font-size:1em;
+}
+
+.podatki ul li ul{
+    display: none;
+}
+
+.podatki ul li:hover ul{
+    display: block;
+}
+
+.podatki ul li a:hover{
+    font-weight: bold;
+    color: rgb(0, 204, 255);
+    transition: .2s;
+}
+
+.podatki li:not(:last-child){
+    margin-bottom: 50px;
+}
+.podatki li:nth-child(2), .podatki li:nth-child(4){
+    margin-left: 10%;
+}
+
+.podatki li:nth-child(3){
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 2000px){
+    .glavni-naslov h1{
+        font-size: 4em;
+    }
+
+    nav ul li a{
+        font-size: 1em;
+    }
+
+    #zemljevid{
+        height: 45vh;
+    }
+
+    .umetnina{
+        margin: -13% 0% 0% 13%;
+    }
+
+    .gps{
+        margin: 6% 0% 0% 15%;
+    }
+
+    .podatki li{
+        font-size: 1em;
+    }
+    
+    .podatki ul li a{
+        font-size: 2em;
+    }
+    
+    .podatki ul li ul li a{
+        font-size:2em;
+    }
+
+    .podatki li:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    .podatki{
+        width: 50%;
+        height: 50%;
+        margin: -23.5% 0% 0% 58%;
+    }
+}

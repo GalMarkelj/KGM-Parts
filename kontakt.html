@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, instial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/kontakt.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=PT+Serif:ital@1&display=swap" rel="stylesheet">
     </head>
@@ -21,19 +22,19 @@
             <div class="orodna-vrstica">
               <nav>
                 <ul>
-                  <li id="list1"><a href="index.html" >Domov </a></li>
-                  <li class="active" id="list2"><a href="#" >Kontakt </a></li>
-                  <li id="list3"><a href="#" >O podjetju </a></li>
-                  <li id="list4"><a href="#" >Avtovleka </a></li>
-                  <li id="list5""><a href="#" >Trgovina ▼</a>
+                  <li><a href="index.html" >Domov </a></li>
+                  <li class="active"><a href="#" >Kontakt </a></li>
+                  <li><a href="#" >O podjetju </a></li>
+                  <li><a href="#" >Avtovleka </a></li>
+                  <li><a href="#" >Trgovina ▼</a>
                       <ul>
                           <li><a href="#">Platisca</a></li>
                           <li><a href="#">Gume</a></li>
                           <li><a href="#">Izpuhi</a></li>
                       </ul>
                   </li>
-                  <li id="list6"><a href="#" >Prijava </a></li>
-                  <li id="list7"><a href="#" >Registracija </a></li>
+                  <li><a href="#" >Prijava </a></li>
+                  <li><a href="#" >Registracija </a></li>
                   <div class="logo-bar">
                       <a href="https://www.facebook.com/"><img src="slike/facebook-logo.png" alt="facebook-logo"></a>
                       <a href="https://www.instagram.com/"><img src="slike/instagram-logo.png" alt="instagram-logo"></a>
@@ -87,5 +88,28 @@
                 </ul>
             </div>
           </div>
+
+          <script>
+              ScrollReveal({
+                reset:true,
+                distance: '60px',
+                duration: 2000,
+                delay: 200
+                });
+
+                ScrollReveal().reveal('nav ul li:nth-child(1)', {delay: 20, origin: 'left'});
+                ScrollReveal().reveal('nav ul li:nth-child(2)', {delay: 40, origin: 'left'});
+                ScrollReveal().reveal('nav ul li:nth-child(3), .glavni-naslov', {delay: 60, origin: 'left'});
+                ScrollReveal().reveal('nav ul li:nth-child(4)', {delay: 80, origin: 'left'});
+                ScrollReveal().reveal('nav ul li:nth-child(5)', {delay: 100, origin: 'left'});
+                ScrollReveal().reveal('nav ul li:nth-child(6)', {delay: 120, origin: 'left'});
+                ScrollReveal().reveal('nav ul li:nth-child(7)', {delay: 140, origin: 'left'});
+                ScrollReveal().reveal('.podatki li:nth-child(1)', {delay: 240, origin: 'left', distance: '200px'});
+                ScrollReveal().reveal('.podatki li:nth-child(2)', {delay: 640, origin: 'left', distance: '200px'});
+                ScrollReveal().reveal('.podatki li:nth-child(3)', {delay: 840, origin: 'left', distance: '200px'});
+                ScrollReveal().reveal('.podatki li:nth-child(4)', {delay: 1040, origin: 'left', distance: '200px'});
+                ScrollReveal().reveal('.podatki li:nth-child(5)', {delay: 1240, origin: 'left', distance: '200px'});
+
+          </script>
     </body>
 </html>

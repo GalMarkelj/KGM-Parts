@@ -84,14 +84,3 @@ clearInterval(playSlider);
 slider.addEventListener("mouseout", () => {
 repeater();
 });
-
-ScrollReveal({
-reset:true,
-distance: '60px',
-duration: 2000,
-delay: 200
-});
-
-
-/* animacije spletne strani*/
-

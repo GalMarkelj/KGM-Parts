@@ -22,5 +22,4 @@ $(document).ready(function(){
     }
     setInterval(changeBackground,1000);
 })
-//------------------------------------map glowing automatic changer ------------------------
-
+//------------------------------------ooooo ------------------------
